@@ -1,0 +1,115 @@
+  html {
+    font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
+    font-family: "system-ui"; /* this should be the rest of the output you got from Google Fonts */
+    background-color: #c6cc93;
+    height: 100%;
+  }
+ 
+  h1 {
+    color: #3127b6;
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 3px 3px 1px rgb(137, 142, 148);
+  }
+  body {
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #a89a85;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+    position: relative;
+  }
+  
+  li {
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    color: #ecfc0c;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 20px 0;
+    color: #afbb86;
+    font-weight: bold;
+    font-size: 16px;
+    color: #c51d11;
+    text-decoration: underline;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    color: #3127b6;
+  }
+  #spain {
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+    height: auto;
+  }
+  #clickImagen {
+    position: fixed; /* Changed from incomplete to absolute */
+    bottom: 30px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for the element's width to truly center it */
+    width: 140PX; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover;
+    visibility: hidden
+  }
+
+  #easterEgg{
+    color: #c51d11;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+    height: auto;
+    margin-bottom: 30px;
+    
+  }
+  
+  button {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    width: 120px;
+    margin-top: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 30;
+    border-radius: 11px;
+    margin: 20px 0;
+    cursor: pointer;
+    &:active {
+      background: linear-gradient( 
+        red 0%,
+        red 33.33%,
+        yellow 33.33%,
+        yellow 66.67%,
+        red 66.67%,
+        red 100%
+        
+      );
+      color: transparent;
+    }
+    &:active::after {
+      content: 'MACHO💪'; /* Texto que se muestra cuando se hace clic */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 16px;
+      font-weight: bolder;
+      
+    }
+      color: white;
+      font-weight: bold;
+      
+  }
+    
+  
+ 
